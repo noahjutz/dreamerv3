@@ -19,6 +19,7 @@ setuptools.setup(
     long_description=pathlib.Path('README.md').read_text(),
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages(),
+    package_data={'dreamerv3': ['*.yaml']},
     include_package_data=True,
     install_requires=parse_reqs('requirements.txt'),
     classifiers=[
